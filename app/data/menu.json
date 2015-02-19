@@ -1,0 +1,125 @@
+[
+{"title": "На подпись", "subtabs":[
+  {"title": "Подписать",   "content": "tmp.html"},
+  {"title": "Ознакомиться",  "content": "tmp.html"},
+  {"title": "Исправить",    "content": "tmp.html"}
+  ]
+},
+{"title": "Партнеры",   "content": "prtn/JournalParsPrtn.html", "subtabs": [
+      {"title": "Список",   "content": "prtn/JournalListPrtn.html"},
+      {"title": "Карточки", "content": "prtn/CardsPrtn.html"},
+    {"title": "Новый",   "content": "prtn/CardPrtn.html"},
+    {"title": "Сравнение",   "content": "tmp.html"},
+      {"title": "Дебиторы",  "content": "tmp.html"},
+      {"title": "Кредиторы",    "content": "tmp.html"}
+]},
+{"title": "Номенклатура",   "content": "tmp.html"},
+{"title": "Продажи",  "subtabs":[
+  {"title": "Заказы",  "subtabs": [
+    {"title": "Оформляются",  "content": "tmp.html"},
+    {"title": "В работе", "content": "tmp.html"},
+    {"title": "Исполнены",   "content": "tmp.html"},
+    {"title": "Отказы",  "content": "tmp.html"},
+    {"title": "Удалены",   "content": "tmp.html"}
+  ]
+  },
+  {"title": "Аукционы", "subtabs": [
+    {"title": "Оформляются",   "content": "tmp.html"},
+    {"title": "В работе",  "content": "tmp.html"},
+    {"title": "Исполнены",   "content": "tmp.html"},
+    {"title": "Отказы", "content": "tmp.html"},
+    {"title": "Удалены",   "content": "tmp.html"}    
+    ]
+  },
+  {"title": "Тендеры",   "subtabs": [
+    {"title": "Оформляются",   "content": "tmp.html"},
+    {"title": "В работе",  "content": "tmp.html"},
+    {"title": "Исполнены",   "content": "tmp.html"},
+    {"title": "Отказы",  "content": "tmp.html"},
+    {"title": "Удалены",   "content": "tmp.html"}    
+    ]
+  },
+  {"title": "Договора долгосрочные",    "subtabs": [
+    {"title": "Оформляются",   "content": "tmp.html"},
+    {"title": "В работе",  "content": "tmp.html"},
+    {"title": "Исполнены",   "content": "tmp.html"},
+    {"title": "Отказы",  "content": "tmp.html"},
+    {"title": "Удалены",   "content": "tmp.html"}    
+    ]
+  },
+  {"title": "Деньги",   "subtabs": [
+    ]
+  }
+  ]    
+},
+{"title": "Подряд",  "subtabs":[
+  {"title": "Заказы",  "subtabs": [
+    {"title": "Оформляются",  "content": "tmp.html"},
+    {"title": "В работе", "content": "tmp.html"},
+    {"title": "Исполнены",   "content": "tmp.html"},
+    {"title": "Отказы",  "content": "tmp.html"},
+    {"title": "Удалены",   "content": "tmp.html"}
+  ]
+  },
+  {"title": "Аукционы",   "subtabs": [
+    {"title": "Оформляются",   "content": "tmp.html"},
+    {"title": "В работе",  "content": "tmp.html"},
+    {"title": "Исполнены",   "content": "tmp.html"},
+    {"title": "Отказы", "content": "tmp.html"},
+    {"title": "Удалены",   "content": "tmp.html"}    
+    ]
+  },
+  {"title": "Тендеры",  "subtabs": [
+    {"title": "Оформляются",   "content": "tmp.html"},
+    {"title": "В работе",  "content": "tmp.html"},
+    {"title": "Исполнены",   "content": "tmp.html"},
+    {"title": "Отказы",  "content": "tmp.html"},
+    {"title": "Удалены",   "content": "tmp.html"}    
+    ]
+  },
+  {"title": "Договора долгосрочные",    "subtabs": [
+    {"title": "Оформляются",   "content": "tmp.html"},
+    {"title": "В работе",  "content": "tmp.html"},
+    {"title": "Исполнены",   "content": "tmp.html"},
+    {"title": "Отказы",  "content": "tmp.html"},
+    {"title": "Удалены",   "content": "tmp.html"}    
+    ]
+  },
+  {"title": "Деньги",  "subtabs": [
+    {"title": "Деньги 1",  "content": "tmp.html"},
+    {"title": "Деньги 2",   "content": "tmp.html"}    
+    ]
+  }
+  ]    
+},
+{"title": "Логистика",  "subtabs":[
+    {"title": "Логистика 1",  "content": "tmp.html"},
+    {"title": "Логистика 2",   "content": "tmp.html"}    
+  ]
+  
+},
+{"title": "Финансы",  "subtabs":[
+    {"title": "Финансы 1",  "content": "tmp.html"},
+    {"title": "Финансы 2",   "content": "tmp.html"}    
+  ]
+  
+},
+{"title": "Производство",  "subtabs":[
+    {"title": "Производство 1",  "content": "tmp.html"},
+    {"title": "Производство 2",   "content": "tmp.html"}    
+  ]
+  
+},
+{"title": "Еще",  "subtabs":[
+    {"title": "Еще 1",  "content": "tmp.html"},
+    {"title": "Еще 2",   "content": "tmp.html"}    
+  
+  ]
+  
+},
+{"title": "Настройка",  "subtabs":[
+    {"title": "Настройка 1",  "content": "tmp.html"},
+    {"title": "Настройка 2",   "content": "tmp.html"}    
+  ]
+}
+]      

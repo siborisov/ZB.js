@@ -1,0 +1,28 @@
+<section class="pull-left">
+  <btn-list-sortng-off ng-click="tableParams.sorting({})"> </btn-list-sortng-off>
+  <btn-list-filter-off ng-click="tableParams.filter({})"> </btn-list-filter-off>
+</section>      
+
+<div class="container-fluid glass">
+  <table ng-table="tableParams" show-filter="true" class="table" >
+    <tr ng-repeat-start="JourPrtnRow in $data" ng-show="!JourPrtnRow.detail" ng-class= "ClassBorderStatus(JourPrtnRow.status)" >
+            
+      <td width="58%" data-title="'Краткое наименование'" ng-bind="JourPrtnRow.ShortName" sortable="'ShortName'" filter="{ 'ShortName': 'text' }"></td>
+      <td width="20%" data-title="'login'" ng-bind="JourPrtnRow.login" sortable="'login'" filter="{ 'login': 'text' }"></td>                
+      <td width="5%" data-title="'Тип'" ng-bind="JourPrtnRow.JP" sortable="'JP'" filter="{ 'JP': 'text' }"></td>
+      <td width="5%" data-title="'Id'" ng-bind="JourPrtnRow.id" sortable="'id'" filter="{ 'id': 'text' }"></td>
+      <td width="8%" >
+			  <btn-remove-from-list ng-click="CardHide(JourPrtnRow)"></btn-remove-from-list>
+			  <btn-card-copy ng-show="JourPrtnRow.btShow != 0" ng-click="CardCopy(JourPrtnRow)"></btn-card-copy>
+			</td>
+      <td   >
+			  <btn-folder-open ng-show="JourPrtnRow.btShow != 0" ng-click="CardLoad(JourPrtnRow)" class="pull-right"></btn-folder-open>				 
+      </td>
+    </tr>
+
+    <tr ng-repeat-end="JourPrtnRow in $data" ng-show="JourPrtnRow.detail">
+      <td  colspan="5"><div ng-include="'prtn/CardPrtn.html'" class = "zbjournalrow"></div></td>
+      <td><button ng-click="CardClose(JourPrtnRow)" class="close  pull-top">x</button></td>
+    </tr>
+  </table>
+</div>

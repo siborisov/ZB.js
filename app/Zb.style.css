@@ -1,0 +1,76 @@
+.strike {
+  text-decoration: line-through;
+}
+.bold {
+    font-weight: bold;
+}
+.zbrowselect {
+    background-color: Gainsboro;
+}
+
+body { padding-top:10px; }
+
+
+.zbstatusborderarchive {
+	border: 4px solid  DimGray;
+}
+.zbstatusborderdelete {
+	border: 4px solid  Black;
+}
+.zbstatusborderreturn {
+	border: 4px solid  LightCoral;
+}
+
+.zbstatusbordersigned {
+	border: 4px solid  Green;
+}
+
+.zbstatusborderdraft {
+	border: 4px solid gold
+}
+
+.zbstatusborderisedit {
+	border: 4px solid Navy
+}
+.zbstatusbordernoedit {
+	border: 4px solid white
+}
+/*
+.zbjournalrow {
+  padding-right:20px;
+}
+*/
+
+    #defaultValidationClassesPart .ng-valid
+    {
+      border: solid green 1px;
+      width:     100%;
+    }
+
+    #defaultValidationClassesPart .ng-invalid
+    {
+      border: solid red 1px;
+      width:     100%;
+    }
+
+    #customValidationClassesPart .invalidItem
+    {
+      border: dashed red 2px;
+    }
+
+    form
+    {
+      padding: 10px;
+    }
+
+    textarea
+    {
+      width: 250px;
+      height: 100px;
+    }
+    
+.zbcardtable { 
+ table-layout: fixed; 
+  width:     100%;
+  white-space:nowrap;
+}    

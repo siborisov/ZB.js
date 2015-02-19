@@ -1,0 +1,35 @@
+[
+      {"mainplaceholder" :"Строка поиска:", "mainvalue" :"", "maincmbvalue": 0, "show" : false,
+
+        "maincmb":[
+              {"id":0,    "label": "Все"},
+              {"id":1,    "label": "Клиенты"},
+              {"id":2,    "label": "Поставщики"},
+              {"id":3,    "label": "Сотрудники"},
+              {"id":4,    "label": "Торговые площадки"},
+              {"id":5,    "label": "Фирмы ГК"}
+        ],
+        "textboxes":[
+            {"name": "CardName", "title": "Наименование", "placeholder" :"Фрагмент наименования", "value" :"" },
+            {"name": "Adress", "title": "Адрес", "placeholder" :"Фрагмент адреса", "value" :"" },
+            {"name": "Phone", "title": "№ телефона", "placeholder" :"Фрагмент № телефона", "value" :"" }
+        ],
+        "comboboxes":[
+            {"name": "VIP", "title": "VIP", "placeholder" :"-- не выбрано --", "options" : "i.label for i in item.list", "value" : {},
+              "list":[    
+                { "id":0,    "label": "нет" }, 
+                { "id":1,    "label": "да"  }
+              ]
+            },
+            {"name": "Advertising", "title": "Реклама", "placeholder" :"-- не выбрано --", "options" : "i.label for i in item.list","value" :{},
+             "list":[    
+                { "id":0,    "label": "Реклама 1" }, 
+                {   "id":1,    "label": "Реклама 2"  },
+                {   "id":2,    "label": "личные связи менеджера"  },
+                {   "id":3,    "label": "Реклама 4"  },
+                {   "id":4,    "label": "Реклама 5"  }
+            ]
+            }
+        ]
+      }
+]

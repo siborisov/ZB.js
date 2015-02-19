@@ -1,0 +1,37 @@
+<h5>
+  <div   ng-class= "ClassBorderStatus(JourPrtnRow.card.status) ">
+    <div ng-class= "ClassBorderEdit(JourPrtnRow.card.isEdit)">
+      <table width="100%" >
+        <tr>
+          <td width="58%" ng-bind= "JourPrtnRow.card.ShortName"></td>
+          <td width="20%" ng-bind= "JourPrtnRow.card.login"></td>                
+          <td width="5%"  ng-bind= "JourPrtnRow.card.JP"></td>
+          <td width="5%"  ng-bind= "JourPrtnRow.card.id"></td>
+          <td>
+            <section   class="pull-right" >
+              <btn-export-scv ng-show = "!JourPrtnRow.card.isEdit" ng-click="CardExportSCV(JourPrtnRow.card)"></btn-export-scv>      
+              <btn-set-edit-on ng-show = "!JourPrtnRow.card.isEdit" ng-click="CardEditOn(JourPrtnRow.card)"></btn-set-edit-on>
+              <btn-set-edit-off ng-show = "JourPrtnRow.card.isEdit" ng-click="CardEditOff(JourPrtnRow.card)"></btn-set-edit-off>
+            </section>                 
+                  
+          </td>
+        </tr>
+      </table>
+      
+        <tabset vertical="false" justified="true" type = "tabs">
+          <tab  ng-repeat="item in JourPrtnRow.card.tabs">
+          <tab-heading ng-bind = "item.title"></tab-heading>  
+          <tabset vertical="false" justified="true">
+            <tab  ng-repeat="CardTab in item.subtabs">
+              <tab-heading ng-bind = "CardTab.title"></tab-heading>
+              <h6>
+                <div ng-include="CardTab.content" class="container-fluid"></div>
+
+              </h6>  
+              </tab>
+              </tabset>          
+            </tab>
+          </tabset>
+    </div>
+  </div>
+</h5>

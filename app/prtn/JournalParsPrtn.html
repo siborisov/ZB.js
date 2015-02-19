@@ -1,0 +1,50 @@
+<form>
+	<br> 
+  <div ng-repeat="mitem in JourParsPrtn">   
+ 
+      <select ng-model="mitem.maincmbvalue" ng-options= "i.id as i.label for i in mitem.maincmb"></select>
+      
+      <input type="text" ng-model="mitem.mainvalue" placeholder={{mitem.mainplaceholder}}>
+        [<a href ng-click="mitem.mainvalue =''">X</a>] 
+        
+	     <btn-show-details ng-show="!mitem.show" ng-click="mitem.show = !mitem.show">...</btn-show-details>
+       <btn-jour-pars-clear-all ng-click="clearFndAll()"> </btn-jour-pars-clear-all>
+      <btn-export-scv ng-click="alert('Не реализовано')"></btn-export-scv>       
+<!--         ng-mousedown="csv.generate()" ng-href="{{ csv.link() }}" download="test.csv"  -->
+        <btn-list-refresh  ng-click="LoadJournal()"> </btn-list-refresh>
+        
+
+
+       
+       
+       <br>
+       <div ng-show="mitem.show">
+        <button ng-click="mitem.show = !mitem.show" class="close  pull-top">x</button>      
+        <table  width = 100% class = "well">
+            <tr >
+            <td width = 50%>	      
+              <table>
+                <tr ng-repeat="item in mitem.textboxes">
+                  <td width = 40%><label ng-bind ="item.title"></label></td>                
+                  <td width = 60%>
+                    <input type="text" ng-model="item.value"  placeholder={{item.placeholder}}>[<a href ng-click="item.value =''">X</a>] 
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td width = 50%>            
+              <table>
+                <tr ng-repeat="item in mitem.comboboxes">
+                  <td width = 40%><label ng-bind ="item.title"></label></td>
+                  <td width = 60%><select ng-model="item.value" ng-options={{item.options}}><option value="">{{item.placeholder}}</option></select>
+                    [<a href ng-click="item.value ={}">X</a>]  
+                </td>
+                </tr>
+              </table>
+
+            </td>
+            </tr>
+        </table>
+      </div>
+	 </div>               
+</form>

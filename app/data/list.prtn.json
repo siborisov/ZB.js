@@ -1,0 +1,22 @@
+
+[ 
+  {"btShow": 1, "id": 0,  "status":0, "card":{},"ShortName": "Борисов Сергей Иванович", "JP": "ф.л.", "login":"Борисов 0"},
+  {"btShow": 1, "id": 1,  "status":1, "card":{},"ShortName": "Петров Сергей Иванович", "JP": "ф.л.", "login":"Петров"},
+  {"btShow": 1, "id": 2,  "status":2, "card":{},"ShortName": "Иванов Сергей Иванович", "JP": "ф.л.", "login":"Иванов"},
+  {"btShow": 1, "id": 3,  "status":1, "card":{},"ShortName": "Петухов Андрей Григорьевич", "JP": "ф.л.", "login":"Петухов"},
+  {"btShow": 1, "id": 4,  "status":10,"card":{},"ShortName": "Сидоров Юрий Владимирович", "JP": "ф.л.", "login":"Сидороов"},
+  {"btShow": 1, "id": 5,  "status":1, "card":{},"ShortName": "ЗАО 'Рога и Копыта'", "JP": "ю.л.", "login":"РИК"},
+  {"btShow": 1, "id": 6,  "status":1, "card":{},"ShortName": "ОАО 'Роснефть'", "JP": "ю.л.", "login":"нефть"},
+  {"btShow": 1, "id": 7,  "status":1, "card":{},"ShortName": "ЗАО 'Союзнихром'", "JP": "ю.л.", "login":"Союзнихром"},
+  {"btShow": 1, "id": 8,  "status":-1,"card":{},"ShortName": "Сидоров Сергей Иванович", "JP": "ф.л.", "login":"Сидоров"},
+  {"btShow": 1, "id": 9,  "status":1, "card":{},"ShortName": "Петухов Сергей Иванович", "JP": "ф.л.", "login":"Петухов"},
+  {"btShow": 1, "id": 10, "status":1, "card":{},"ShortName": "Борисов Андрей Григорьевич", "JP": "ф.л.", "login":"Борисов 10"},
+  {"btShow": 1, "id": 11, "status":1, "card":{},"ShortName": "Борисов Юрий Владимирович", "JP": "ф.л.", "login":"Борисов 11"},
+  {"btShow": 1, "id": 12, "status":1, "card":{},"ShortName": "Борисов Сергей Иванович", "JP": "ф.л.", "login":"Борисов 12"},
+  {"btShow": 1, "id": 13, "status":1, "card":{},"ShortName": "Борисов Сергей Иванович", "JP": "ф.л.", "login":"Борисов 13"},
+  {"btShow": 1, "id": 14, "status":1, "card":{},"ShortName": "Борисов Сергей Иванович", "JP": "ф.л.", "login":"Борисов 14"},
+  {"btShow": 1, "id": 15, "status":1, "card":{},"ShortName": "Борисов Сергей Иванович", "JP": "ф.л." ,"login":"Борисов 15"},
+  {"btShow": 1, "id": 16, "status":1, "card":{},"ShortName": "Борисов Сергей Иванович", "JP": "ф.л.", "login":"Борисов 16"},
+  {"btShow": 1, "id": 17, "status":1, "card":{},"ShortName": "Борисов Сергей Иванович", "JP": "ф.л.", "login":"Борисов 17"},
+  {"btShow": 1, "id": 18, "status":1, "card":{},"ShortName": "Борисов Сергей Иванович", "JP": "ф.л.", "login":"Борисов 18"}
+]

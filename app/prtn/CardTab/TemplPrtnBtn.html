@@ -1,0 +1,9 @@
+<btn-row-files  ng-show="row.btFiles != 0 && row.btAdd == 0"                 ng-click="row.showfiles = !row.showfiles "> </btn-row-files>
+<section ng-show="JourPrtnRow.card.isEdit &&  !row.isEdit && !CardTab.isEdit"    class="pull-right" >
+	<btn-row-edit   ng-show="row.btEd != 0"    ng-click="CardRowEd (CardTab, row)"> </btn-row-edit>
+	<btn-row-trash  ng-show="row.btDel != 0"   ng-click="CardRowDel(CardTab, row)" ></btn-row-trash>
+	<btn-row-add    ng-show="row.btAdd != 0"   ng-click="CardRowAdd(CardTab, row)" > </btn-row-add>			                  
+</section>
+			
+			
+<!-- еще поставить условие на видимость кнопок прикрепленных файлов && !JourPrtnRow.card.showfiles"-->			

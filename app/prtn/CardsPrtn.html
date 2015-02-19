@@ -1,0 +1,8 @@
+<div class="container-fluid glass">
+  <table  width="100%" >
+    <tr ng-repeat="JourPrtnRow in OpenedCards">
+      <td td width="96%"><div ng-include="'prtn/CardPrtn.html'" class = "zbjournalrow"></div></td>
+      <td><button ng-click="CardClose(JourPrtnRow)" class="close  pull-top ">x</button></td>
+    </tr>
+  </table>
+</div>  

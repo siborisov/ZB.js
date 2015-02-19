@@ -1,0 +1,156 @@
+{"ShortName": "Краткое наименование для документов", "status":1, "id" : 1, "JP": "ф.л.", "login": "nologin", "tabs":[
+{"title": "Главное", "subtabs":[
+  {"title": "Функции",  "content": "tmp.html"},
+  {"title": "Падежи",   "content": "prtn/CardTab/TabCases.html",
+    "rows":[
+      {"btEd": 1, "btAdd": 0, "btDel": 0, "RecId" : 12, "PropEntRowId": 33  , "PropEntRowValue" : "Фамилия Имя Отчество (кому)" , "PropValue" : "Борисову Сергею Ивановичу",   "PropComment" : "", "Code" : "233.34.324.43", "HelpId" : 223, "btFiles" : 0},
+      {"btEd": 1, "btAdd": 0, "btDel": 0, "RecId" : 12, "PropEntRowId": 34  , "PropEntRowValue" : "Фамилия И.О. (кому)" , "PropValue" : "Борисову С.И.",   "PropComment" : "", "Code" : "233.34.324.44", "HelpId" : 224, "btFiles" : 0},
+      {"btEd": 1, "btAdd": 0, "btDel": 0, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "Фамилия Имя Отчество (кого)" , "PropValue" : "Борисова Сергея Ивановича",   "PropComment" : "от 12.01.2010", "Code" : "233.34.324.45", "HelpId" : 225, "btFiles" : 0},
+      {"btEd": 1, "btAdd": 0, "btDel": 0, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "Фамилия И.О. (кого)" , "PropValue" : "Борисова С.И.",   "PropComment" : "jn 12.01.2012", "Code" : "233.34.324.45", "HelpId" : 225, "btFiles" : 0}
+    ]
+  },
+  {"title": "Классификаторы",  "content": "prtn/CardTab/TabPrtnCodes.html",
+    "rows":[
+      {"btEd": 1, "btAdd": 0, "btDel": 0, "RecId" : 12, "PropEntRowId": 33  , "PropEntRowValue" : "ОКОНХ" , "PropValue" : "цуйцу уццй",   "PropComment" : "ОКОНХ", "Code" : "233.34.324.43", "HelpId" : 223, "btFiles" : 0},
+      {"btEd": 1, "btAdd": 0, "btDel": 0, "RecId" : 12, "PropEntRowId": 34  , "PropEntRowValue" : "ОКПО" , "PropValue" : "ываыв ыввы",   "PropComment" : "ОКПО", "Code" : "233.34.324.44", "HelpId" : 224, "btFiles" : 0},
+      {"btEd": 1, "btAdd": 0, "btDel": 1, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "ОКВЭД" , "PropValue" : "",   "PropComment" : "ОКВЭД", "Code" : "233.34.324.45", "HelpId" : 225, "btFiles" : 0},
+      {"btEd": 0, "btAdd": 1, "btDel": 0, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "ОКАТО" , "PropValue" : "",   "PropComment" : "ОКАТО", "Code" : "233.34.324.45", "HelpId" : 225, "btFiles" : 0}
+    ]
+  },
+  {"title": "Холдинг",  "content": "tmp.html"},
+  {"title": "Документы","content": "prtn/CardTab/TabPrtnPapers.html",
+    "rows":[
+      {"btEd": 1, "btAdd": 0,  "btDel": 0, "RecId" : 12, "PropEntRowId": 33  , "PropEntRowValue" : "Свидетельство о регистрации" ,
+            "PropValue" : "№ 2323 от 12.01.2015 выдано ....",   "PropComment" : "", "Code" : "233.34.324.43", "HelpId" : 223, "btFiles" : 1,
+        "files":[
+              {"btEd":1, "btDel":1, "btShow": 1,  "btAdd":0, "name" : "file1.cdr", "viewtype": "jpg", "fulltype": "cdr", "dateattach": "17.01.2015" },
+              {"btEd":1, "btDel":1, "btShow": 1,  "btAdd":0, "name" : "файл 2.doc", "viewtype": "pdf", "fulltype": "doc", "dateattach": "17.01.2015" },
+              {"btEd":1, "btDel":1, "btShow": 1,  "btAdd":0, "name" : "еще один.xls", "viewtype": "pdf", "fulltype": "xls", "dateattach": "17.01.2015"},
+              {"btEd":1, "btDel":1, "btShow": 1,  "btAdd":0, "name" : "можно и заменить.jpg", "viewtype": "jpg", "fulltype": "jpg", "dateattach": "17.01.2015" },
+              {"btEd":0, "btDel":0, "btShow": 0,  "btAdd":1, "name" : "", "viewtype": "", "fulltype": "", "dateattach": "" }            
+        ]
+      },
+      {"btEd": 0, "btAdd": 0,  "btDel": 0, "RecId" : 12, "PropEntRowId": 34  , "PropEntRowValue" : "Устав" , 
+            "PropValue" : "-",   "PropComment" : "", "Code" : "233.34.324.44", "HelpId" : 224, "btFiles" : 0,
+            "files":[
+            ]},
+        {"btEd": 0, "btAdd": 0,  "btDel": 1, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "Прочее" ,
+            "PropValue" : "Изменения в уставе.",   "PropComment" : "от 12.01.2010", "Code" : "233.34.324.45", "HelpId" : 225, "btFiles" : 1,
+            "files":[
+            ]},
+        {"btEd": 1, "btAdd": 0,  "btDel": 1, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "Прочее" ,
+            "PropValue" : "Изменения в уставе",   "PropComment" : "jn 12.01.2012", "Code" : "233.34.324.45", "HelpId" : 225, "btFiles" : 1,
+            "files":[
+            ]},
+        {"btEd": 0, "btAdd": 1,  "btDel": 0, "RecId" : 0,  "PropEntRowId": 35  , "PropEntRowValue" : "Прочее" , 
+            "PropValue" : "",   "PropComment" : "jn 12.01.2012", "Code" : "233.34.324.45", "HelpId" : 225, "btFiles" : 1,
+            "files":[
+            ]
+        }
+      ]
+    },
+  {"title": "Пол",  "content": "Tmp.validation.html"},
+  {"title": "История",               "content": "tmp.html"}
+]},
+{"title": "Контакты", "subtabs":[
+  {"title": "Адреса",   "content": "prtn/CardTab/TabAddr.html",
+    "rows":[
+      {"btEd": 1, "btAdd": 0,  "btDel": 0, "RecId" : 12, "PropEntRowId": 33  , "PropEntRowValue" : "Юридический" ,
+            "PropValue" : "№ 2323 от 12.01.2015 выдано ....",   "PropComment" : "", "Code" : "233.34.324.43", "HelpId" : 223, "Adr":"", "btFiles" : 1,
+        "files":[
+              {"btEd":1, "btDel":1, "btShow": 1,  "btAdd":0, "name" : "file1.cdr", "viewtype": "jpg", "fulltype": "cdr", "dateattach": "17.01.2015" },
+              {"btEd":1, "btDel":1, "btShow": 1,  "btAdd":0, "name" : "файл 2.doc", "viewtype": "pdf", "fulltype": "doc", "dateattach": "17.01.2015" },
+              {"btEd":1, "btDel":1, "btShow": 1,  "btAdd":0, "name" : "еще один.xls", "viewtype": "pdf", "fulltype": "xls", "dateattach": "17.01.2015"},
+              {"btEd":1, "btDel":1, "btShow": 1,  "btAdd":0, "name" : "можно и заменить.jpg", "viewtype": "jpg", "fulltype": "jpg", "dateattach": "17.01.2015" },
+              {"btEd":0, "btDel":0, "btShow": 0,  "btAdd":1, "name" : "", "viewtype": "", "fulltype": "", "dateattach": "" }            ]},
+              
+      {"btEd": 0, "btAdd": 0,  "btDel": 0, "RecId" : 12, "PropEntRowId": 34  , "PropEntRowValue" : "Фактический" , 
+            "PropValue" : "-",   "PropComment" : "", "Code" : "233.34.324.44", "HelpId" : 224,  "Adr":"", "btFiles" : 0,
+            "files":[
+            ]},
+      {"btEd": 0, "btAdd": 0,  "btDel": 1, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "Почтовый" ,
+            "PropValue" : "Изменения в уставе.",   "PropComment" : "от 12.01.2010", "Code" : "233.34.324.45", "HelpId" : 225, "Adr":"", "btFiles" : 1,
+            "files":[
+            ]},
+
+      {"btEd": 0, "btAdd": 1,  "btDel": 0, "RecId" : 0,  "PropEntRowId": 35  , "PropEntRowValue" : "Прочее" , 
+            "PropValue" : "",   "PropComment" : "", "Code" : "233.34.324.45", "HelpId" : 225,  "Adr":"", "btFiles" : 1,
+            "files":[
+            ]
+        }
+      ]                              
+  },
+  {"title": "Адреса www", "content": "tmp.html"},
+  {"title": "email",                 "content": "tmp.html"},
+  {"title": "телефоны",              "content": "tmp.html"},
+  {"title": "Др связь",              "content": "tmp.html"},
+  {"title": "конт лица",             "content": "tmp.html"}                 
+]},
+{"title": "Счета", "subtabs":[
+  {"title": "В банках РФ", "content": "prtn/CardTab/TabBARu.html",
+    "rows":[
+        {"btEd": 1, "btAdd": 0, "btDel": 0, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "Для СНО" , "PropValue" : "044525225",   "PropComment" : "Сбербанк", "BA": "12345678901234567890", "SBA": "отделение 2 лс 334"},
+        {"btEd": 1, "btAdd": 0, "btDel": 1, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "Прочее" , "PropValue" : "999999999",   "PropComment" : "Несуществующий Банк", "BA": "12345678901234567999", "SBA": ""},
+        {"btEd": 1, "btAdd": 1, "btDel": 0, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "Прочее" , "PropValue" : "",   "PropComment" : "", "BA": "", "SBA": ""}
+      ]},
+  {"title": "Прочие, вкл в платежных системах",  "content": "tmp.html"}
+]},  
+{"title": "Продажи", "subtabs":[
+  {"title": "Сегменты",              "content": "tmp.html"},
+  {"title": "Общение",               "content": "tmp.html"},
+  {"title": "Переписка email",       "content": "tmp.html"},
+  {"title": "Менеджеры",             "content": "tmp.html"},
+  {"title": "Заказы",                "content": "tmp.html"},
+  {"title": "Баланс",                "content": "tmp.html"}               
+]},
+{"title": "Подряд", "subtabs":[
+  {"title": "Сегменты",              "content": "tmp.html"},
+  {"title": "Общение",               "content": "tmp.html"},
+  {"title": "Переписка email",       "content": "tmp.html"},
+  {"title": "Менеджеры",             "content": "tmp.html"},
+  {"title": "Заказы",                "content": "tmp.html"},
+  {"title": "Баланс",                "content": "tmp.html"}
+]},
+{"title": "Сотрудник", "subtabs":[
+  {"title": "Должность",             "content": "tmp.html"},
+  {"title": "Общение",               "content": "tmp.html"},
+  {"title": "Переписка email",       "content": "tmp.html"},
+  {"title": "Заказы",                "content": "tmp.html"},
+  {"title": "статистика",            "content": "tmp.html"},  
+  {"title": "кадры",                 "content": "tmp.html"},  
+  {"title": "документы",             "content": "prtn/CardTab/TabPrtnPapers.html", 
+    "rows":[
+      {"btEd": 1, "btAdd": 0,  "btDel": 0, "RecId" : 12, "PropEntRowId": 33  , "PropEntRowValue" : "загранпаспорт" ,
+        "PropValue" : "№ 2323 от 12.01.2015 выдано ....",   "PropComment" : "", "Code" : "233.34.324.43", "HelpId" : 223, "btFiles" : 1,
+        "files":[
+              {"btEd":1, "btDel":1, "btShow": 1,  "btAdd":0, "name" : "стр1", "viewtype": "jpg", "fulltype": "cdr", "dateattach": "17.01.2015" },
+              {"btEd":1, "btDel":1, "btShow": 1,  "btAdd":0, "name" : "стр2", "viewtype": "pdf", "fulltype": "doc", "dateattach": "17.01.2015" },
+              {"btEd":1, "btDel":1, "btShow": 1,  "btAdd":0, "name" : "стр3", "viewtype": "pdf", "fulltype": "xls", "dateattach": "17.01.2015"},
+              {"btEd":0, "btDel":0, "btShow": 0,  "btAdd":1, "name" : "", "viewtype": "", "fulltype": "", "dateattach": "" }            
+      ]},
+      {"btEd": 0, "btAdd": 0,  "btDel": 0, "RecId" : 12, "PropEntRowId": 34  , "PropEntRowValue" : "Устав" , 
+            "PropValue" : "паспорт",   "PropComment" : "", "Code" : "233.34.324.44", "HelpId" : 224, "btFiles" : 0,
+            "files":[
+      ]},
+      {"btEd": 0, "btAdd": 0,  "btDel": 1, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "Прочее" ,
+            "PropValue" : "водительское",   "PropComment" : "от 12.01.2010", "Code" : "233.34.324.45", "HelpId" : 225, "btFiles" : 1,
+            "files":[
+      ]},
+      {"btEd": 1, "btAdd": 0,  "btDel": 1, "RecId" : 12, "PropEntRowId": 35  , "PropEntRowValue" : "Прочее" ,
+            "PropValue" : "военный билет",   "PropComment" : "jn 12.01.2012", "Code" : "233.34.324.45", "HelpId" : 225, "btFiles" : 1,
+            "files":[
+      ]},
+      {"btEd": 0, "btAdd": 1,  "btDel": 0, "RecId" : 0,  "PropEntRowId": 35  , "PropEntRowValue" : "Прочее" , 
+            "PropValue" : "",   "PropComment" : "jn 12.01.2012", "Code" : "233.34.324.45", "HelpId" : 225, "btFiles" : 1,
+            "files":[
+      ]}
+    ]
+    }
+]},
+{"title": "ГК", "subtabs":[
+  {"title": "Склады",                "content": "tmp.html"},          
+  {"title": "Цеха",                  "content": "tmp.html"},
+  {"title": "Кассы",                 "content": "tmp.html"}                  
+  ]}
+]
+}

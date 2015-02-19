@@ -1,0 +1,49 @@
+<table class="table-bordered table-condensed table-hover" width="100%" >
+  <tr ng-repeat-start="row in CardTab.rows" >
+    <td width="20%" ng-bind="row.PropEntRowValue"></td>
+    <td width="70%" ng-bind="row.PropValue" ></td>
+    <td  width = "10%" ng-include = "'prtn/CardTab/TemplPrtnBtn.html'"></td>
+
+  </tr>
+              <!-- FILES -->
+              
+  <tr ng-repeat-end="row in CardTab.rows" ng-show="row.showfiles || row.isEdit ">
+    <td  colspan="3">
+
+      <div ng-include="'Zb.attachments.html'"></div>
+               
+      <!-- EDIT Form -->
+                
+      <div class="container-fluid" ng-show = "row.isEdit">  
+        <div id="defaultValidationClassesPart">
+          <a href ng-click="CardRowClose(CardTab, row)" class="close pull-top">x</a>
+          <form name="PropValueForm" ng-submit="CardRowSubmit(PropValueForm.$valid, CardTab, row)"  novalidate>
+
+                      <div class="form-group" ng-class="{ 'has-error' : PropValueForm.tmpPropValue.$invalid && !PropValueForm.tmpPropValue.$pristine }">
+
+                      <table width = "100%">
+                      <tr>
+                      
+                      <td width = "10%"><label  ng-bind="row.PropEntRowValue"></label></td>
+                      <td width = "90%"><input type="text" 
+                        name="tmpPropValue" 
+                        class="form-control" 
+                        ng-model="CardTab.tmpRow.PropValue"  
+                        ng-minlength="3" 
+                        ng-maxlength="200" 
+                        required
+                        ng-pattern="Pattern_Text" >
+                      </td>
+                      <td><btn-errors ng-hide="PropValueForm.tmpPropValue.$valid"  tooltip-placement="left" tooltip={{getItemMsgError(PropValueForm.tmpPropValue)}}></btn-errors></td>
+                      </tr>
+                      </table>
+                    </div>
+                    <btn-row-submit ng-show="PropValueForm.$valid && !PropValueForm.$pristine"></btn-row-submit>
+                  </form>
+        </div>
+      </div>
+
+    </td>
+  </tr>
+
+</table>

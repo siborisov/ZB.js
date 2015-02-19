@@ -1,0 +1,128 @@
+<table class="table-bordered table-condensed table-hover " width="100%"  >
+  <thead>
+    <tr>
+    <th width="5%">Тип</th>
+    <th width="15%">Расчетный счет</th>
+    <th width="20%">Дополнительно</th>
+    <th width="40%">Банк</th>
+    <th width="10%">БИК</th>
+    <th></th>
+    </tr>
+  </thead>
+  <tr ng-repeat-start="row in CardTab.rows" >
+<!-- "PropEntRowValue" : "Для СНО" , "PropValue" : "044525225",   "PropComment" : "Сбербанк", "BA": "12345678901234567890", "SBA": "отделение 2 лс 334"}, -->
+    <td width = "5%" ng-bind="row.PropEntRowValue"></td>
+    <td width = "15%" ng-bind="row.BA" ></td>    
+    <td width = "20%" ng-bind="row.SBA" ></td>    
+    <td width = "40%" ng-bind="row.PropComment" ></td>
+    <td width = "10%" ng-bind="row.PropValue" ></td>   
+
+    <td ng-include = "'prtn/CardTab/TemplPrtnBtn.html'"></td>
+  </tr>
+              
+              <!-- FILES -->
+              
+  <tr ng-repeat-end="row in CardTab.rows" ng-show="row.showfiles || row.isEdit ">
+    <td  colspan="5">
+      <div ng-show = "row.isEdit" class="container-fluid" > 
+        <div id="defaultValidationClassesPart">
+          <a href ng-click="CardRowClose(CardTab, row)" class="close pull-top">x</a>
+   
+      
+    <form name="BARuForm"   novalidate    ng-submit="CardRowSubmit(BARuForm.$valid, CardTab, row)" >      <!-- Banks Accounts in Russia-->
+
+      <div class="form-group" ng-class="{ 'has-error' : (BARuForm.tmpBAType.$invalid && !BARuForm.tmpBAType.$pristine)   }">
+        <table width= "100%"><tr>
+          <td width= "10%"><label>Тип счета:</label></td>
+          <td width= "90%"><input type="text" 
+            disabled
+            name="tmpBAType" 
+            width= "100%"
+            ng-model="CardTab.tmpRow.PropEntRowValue"  
+            required
+             />
+          </td>
+          <td><btn-errors ng-hide="BARuForm.tmpBAType.$valid" tooltip-placement="left" tooltip={{getItemMsgError(BARuForm.tmpBAType)}}></btn-errors>
+          </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error' : (BARuForm.tmpBA.$invalid && !BARuForm.tmpBA.$pristine)   }">
+        <table width= "100%"><tr>
+          <td width= "10%"><label>Расчетный счет:</label></td>
+          <td width= "90%"><input type="text" 
+            placeholder="Введите расчетный счет (20 цифр)"
+            name="tmpBA" 
+            width= "100%"
+            ng-model="CardTab.tmpRow.BA"  
+            required
+            ng-minlength="20" 
+            ng-maxlength="20" 
+            ng-pattern="Pattern_Num" />
+          </td>
+          <td><btn-errors ng-hide="BARuForm.tmpBA.$valid" tooltip-placement="left" tooltip={{getItemMsgError(BARuForm.tmpBA)}}></btn-errors>
+          </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error' : (BARuForm.tmpSBA.$invalid && !BARuForm.tmpSBA.$pristine)   }">
+        <table width= "100%"><tr>
+          <td width= "10%"><label>Дополнительно:</label></td>
+          <td width= "90%"><input type="text" 
+            placeholder="Введите расчетный счет (текст)"
+            name="tmpSBA" 
+            width= "100%"
+            ng-model="CardTab.tmpRow.SBA"  
+            ng-minlength="0" 
+            ng-maxlength="100" 
+            ng-pattern="Pattern_Text" />
+          </td>
+          <td><btn-errors ng-hide="BARuForm.tmpSBA.$valid" tooltip-placement="left" tooltip={{getItemMsgError(BARuForm.tmpSBA)}}></btn-errors>
+          </td>
+          </tr>
+        </table>
+      </div>
+
+
+      <div class="form-group" ng-class="{ 'has-error' : BARuForm.tmpBIK.$invalid && !BARuForm.tmpBIK.$pristine }">
+        <table width= "100%"><tr>
+        <tr>
+        <td width= "10%"><label>БИК:</label></td>
+        <td width= "90%"><input type="text" 
+          placeholder="Введите БИК (9 цифр)"
+          name="tmpBIK" 
+          ng-model="CardTab.tmpRow.PropValue"  
+          required
+          ng-minlength="9" 
+          ng-maxlength="9" 
+          ng-pattern="Pattern_Num" />
+        </td>
+        <td>
+        <btn-errors ng-hide="BARuForm.tmpBIK.$valid" tooltip-placement="left" tooltip={{getItemMsgError(BARuForm.tmpBIK)}}></btn-errors>          
+        <a href ng-show="BARuForm.tmpBIK.$valid" tooltip-placement="left" tooltip= "Получить информацию по банку" class="btn btn-sm btn-primary" ng-click="GetBIKInfo(BARuForm.tmpBIK.$valid,  CardTab)" >Получить</a>
+
+        
+        </td>
+        </tr>
+        </table>
+        <br/>
+        <input type="text"
+          name="tmpBankName" 
+
+          required
+          class = "form-control"
+          ng-model="CardTab.tmpRow.PropComment"  
+          >
+        <btn-errors ng-hide="BARuForm.tmpBankName.$valid" tooltip-placement="left" tooltip="Неcуществующий БИК"></btn-errors>          
+      </div>
+      <btn-row-submit ng-show="BARuForm.$valid && !BARuForm.$pristine"></btn-row-submit>
+      </form>
+
+      </div>
+      </div>
+    </td>
+  </tr>
+
+</table>

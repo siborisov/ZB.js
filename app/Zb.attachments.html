@@ -1,0 +1,31 @@
+<div class="container-fluid" ng-show = "row.showfiles">
+  <button ng-click="row.showfiles = !row.showfiles" class="close pull-top">x</button>
+    <table class="table" width = "100%">
+  <thead>
+    <tr>
+    <th width="70%">Имя</th>
+    <th width="5%">тип</th>
+    <th width="5%%">тип </th>
+    <th width="10%">Загружен </th>
+    <th></th>
+    </tr>
+  </thead>    
+                  <tr ng-repeat="file in row.files">  
+                      <td width="70%" ng-bind="file.name"></td>
+                      <td width="5%" ng-bind="file.viewtype"></td>
+                      <td width="5%" ng-bind="file.fulltype"></td>
+                      <td width="10%" ng-bind="file.dateattach"></td>
+                      <td>
+ 
+				                <btn-folder-open ng-show="file.btShow != 0"> </btn-folder-open>
+				                <section  class="pull-right" >
+				                	<btn-row-add ng-show="file.btAdd != 0" > </btn-row-add>  
+			                    <btn-row-edit ng-show="file.btEd != 0"> </btn-row-edit>
+				                  <btn-row-trash ng-show="file.btDel != 0"> </btn-row-trash>
+
+			                  </section>
+                      </td>
+                  
+                  </tr>
+    </table>
+</div>

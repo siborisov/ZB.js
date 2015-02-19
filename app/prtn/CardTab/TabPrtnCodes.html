@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<table class="table-bordered table-condensed table-hover" width="100%" >
+  <thead>
+    <tr>
+    <th width="20%">Классификатор</th>
+    <th width="70%">Значения</th>
+    <th></th>
+    </tr>
+  </thead>
+  
+
+  
+  <tbody>
+  <tr ng-repeat-start="row in CardTab.rows" >
+    <td width="20%" ng-bind="row.PropComment"></td>
+    <td width="70%" ng-bind="row.PropValue" ></td>
+    <td ng-include = "'prtn/CardTab/TemplPrtnBtn.html'"></td>
+  </tr>
+              
+            
+  <tr ng-repeat-end="row in CardTab.rows" ng-show="row.showfiles || row.isEdit ">
+    <td  colspan="3">
+      <div ng-show = "row.isEdit" class="container-fluid" > 
+  
+        <div id="defaultValidationClassesPart">
+          <a href ng-click="CardRowClose(CardTab, row)" class="close pull-top">x</a>
+          <form name="PropValueForm" ng-submit="CardRowSubmit(PropValueForm.$valid, CardTab, row)"  novalidate>
+
+            <div class="form-group" ng-class="{ 'has-error' : PropValueForm.tmpPropComment.$invalid && !PropValueForm.tmpPropComment.$pristine }">
+              <table width = "100%">
+              <tr>
+                <td width = "20%"><label>Классификатор:</label></td>
+                <td width = "80%"><input type="text" 
+                  name="tmpPropComment" 
+                  class="form-control" 
+                  ng-model="CardTab.tmpRow.PropComment"  
+                  required
+                  ng-minlength="3" 
+                  ng-maxlength="50" 
+                  ng-pattern="Pattern_Text" >
+                </td>
+                <td><button ng-hide="PropValueForm.tmpPropComment.$valid" class="btn btn-sm btn-danger"  tooltip-placement="left" tooltip={{getItemMsgError(PropValueForm.tmpPropComment)}}>Ошибки</button>
+                </td>
+              </tr>
+              </table>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error' : PropValueForm.tmpPropValue.$invalid && !PropValueForm.tmpPropValue.$pristine }">
+              <table width = "100%">
+              <tr>
+                <td width = "20%"><label>Значение:</label></td>
+                <td width = "80%"><input type="text" 
+                  name="tmpPropValue" 
+                  class="form-control" 
+                  ng-model="CardTab.tmpRow.PropValue"  
+                  required
+                  ng-minlength="5" 
+                  ng-maxlength="200" 
+                  ng-pattern="Pattern_Text" >
+                </td>
+                <td><button ng-hide="PropValueForm.tmpPropValue.$valid" class="btn btn-sm btn-danger"  tooltip-placement="left" tooltip={{getItemMsgError(PropValueForm.tmpPropValue)}}>Ошибки</button>
+                </td>
+              </tr>
+              </table>
+            </div>
+
+
+            <btn-row-submit ng-show="PropValueForm.$valid && !PropValueForm.$pristine"></btn-row-submit>
+          </form>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tbody>
+</table>
+

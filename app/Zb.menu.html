@@ -1,0 +1,28 @@
+<h4>
+  <tabset vertical="false" justified="true" type = "tabs">
+    <tab  ng-repeat="ItemLevel0 in mainmenu">
+      <tab-heading ng-bind = "ItemLevel0.title"></tab-heading>  
+        <h5>
+        <div ng-include="ItemLevel0.content" class="container-fluid"></div>
+        <tabset vertical="false" justified="true">
+        
+          <tab  ng-repeat="ItemLevel1 in ItemLevel0.subtabs">
+            <tab-heading ng-bind = "ItemLevel1.title"></tab-heading>
+            
+              <div ng-include="ItemLevel1.content" class="container-fluid"></div>
+              <tabset vertical="false" justified="true">
+              
+                <tab  ng-repeat="ItemLevel2 in ItemLevel1.subtabs">
+                  <tab-heading ng-bind = "ItemLevel2.title"></tab-heading>
+                      <div ng-include="ItemLevel2.content" class="container-fluid"></div>
+                      <strong>{{ItemLevel2.title}}</strong>
+
+                  </tab>
+              </tabset>          
+            
+          </tab>
+        </tabset>  
+        </h5>    
+    </tab>
+  </tabset>
+</h4>  
